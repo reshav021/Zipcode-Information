@@ -1,0 +1,128 @@
+a {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+body {
+  height: 100%;
+  background: url('https://horizon-media.s3-eu-west-1.amazonaws.com/s3fs-public/field/image/ecosystem.jpg');
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+}
+
+body:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+label {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.inputText {
+  height: 30px;
+  width: 250px;
+  margin-top: 1rem;
+  padding: 5px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submitBtn {
+  height: 40px;
+  width: 150px;
+  margin-top: 10px;
+  background: #00bcd4;
+  border: 0;
+  color: #fff;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+
+  &:hover {
+    background: #0099b0;
+  }
+}
+
+#page-wrapper {
+  float: left;
+  width: 100%;
+  margin: 30px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.loading {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.data-container {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
+  color: white;
+  text-align: left;
+}
+
+.location-info {
+  padding-top: 1px;
+}
+
+.search-history {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-height: 250px;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.search-history::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+.search-history::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+.clearBtn {
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+  background: red;
+  border: 0;
+  color: #fff;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+
+  &:hover {
+    background: rgb(216, 8, 8);
+  }
+}
